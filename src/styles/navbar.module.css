@@ -1,0 +1,32 @@
+.nav{
+    position: absolute;
+    top: 0;
+    height: 19vh;
+    width: 100vw;
+    background-color: #01A1DF;
+    display: flex;
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);
+}
+
+.imgDiv{
+    width: 40%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+.navList{
+    width: 85%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.navList ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.navList ul li{
+    border: 1px solid grey;
+}
