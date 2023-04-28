@@ -1,6 +1,7 @@
 import styles from "../styles/navbar.module.css";
 import Logo1 from "../images/Logo1.svg";
 import Logo2 from "../images/Logo2.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -12,34 +13,46 @@ const Navbar = () => {
       <div className={styles.navList}>
         <ul>
           <li>
-            <div>
-              <b>Home</b>
-            </div>
+            <Link to={"/"}>
+              <div>
+                <b>Home</b>
+              </div>
+            </Link>
           </li>
           <li>
-            <div>
-              <b>Team</b>
-            </div>
+            <Link to={"/team"}>
+              <div>
+                <b>Team</b>
+              </div>
+            </Link>
           </li>
           <li>
-            <div>
-              <b>Finance</b>
-            </div>
+            <Link to={"/"}>
+              <div>
+                <b>Finance</b>
+              </div>
+            </Link>
           </li>
           <li>
-            <div>
-              <b>Research Projects</b>
-            </div>
+            <Link to={"/research"}>
+              <div>
+                <b>Research Projects</b>
+              </div>
+            </Link>
           </li>
           <li>
-            <div>
-              <b>Gallery</b>
-            </div>
+            <Link to={"/gallery"}>
+              <div>
+                <b>Gallery</b>
+              </div>
+            </Link>
           </li>
           <li>
-            <div>
-              <b>Publication</b>
-            </div>
+            <Link to={"/publications"}>
+              <div>
+                <b>Publications</b>
+              </div>
+            </Link>
           </li>
         </ul>
       </div>
