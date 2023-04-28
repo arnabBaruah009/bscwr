@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import img7 from "../images/img7.png";
 import styles from "../styles/team.module.css";
 
-const Home = () => {
+const Team = () => {
   return (
     <div className="topContainer">
       <div className={styles.chairPersonInfo}>
@@ -105,4 +105,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Team;
