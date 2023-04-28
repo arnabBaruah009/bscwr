@@ -1,0 +1,45 @@
+.publications{
+  color: #01a1df;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.publications h1{
+  font-weight: 300;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 2.2em;
+}
+
+.publicationsContainer {
+  padding: 0.3rem 2rem;
+}
+
+.publicationDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.publicationDiv .publicationItem {
+  padding: 0.9rem;
+  border: 1px solid rgb(221, 195, 195);
+  margin: 20px 0px;
+}
+
+.publicationDiv .publicationItem h3 {
+  font-size: 1.6em;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.publicationDiv .publicationItem div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.publicationDiv .publicationItem span {
+  color: black;
+  font-size: 1.4em;
+  font-weight: 500;
+}

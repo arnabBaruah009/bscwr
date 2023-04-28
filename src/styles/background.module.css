@@ -1,0 +1,19 @@
+.bckGrnd {
+  position: absolute;
+  background-color: #7fffd448;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.bckGrnd1 {
+  height: 500px;
+  width: 500px;
+  left: -22%;
+}
+
+.bckGrnd2 {
+  height: 400px;
+  width: 400px;
+  bottom: 4%;
+  right: -18%;
+}
