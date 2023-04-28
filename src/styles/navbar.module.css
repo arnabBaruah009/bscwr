@@ -1,32 +1,59 @@
-.nav{
-    position: absolute;
-    top: 0;
-    height: 19vh;
-    width: 100vw;
-    background-color: #01A1DF;
-    display: flex;
-    clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);
+.nav {
+  height: 19vh;
+  background-color: #01a1df;
+  display: flex;
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);
 }
 
-.imgDiv{
-    width: 40%;
-    height: 100%;
-    /* border: 1px solid black; */
+.imgDiv {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid black; */
 }
 
-.navList{
-    width: 85%;
-    height: 100%;
-    /* border: 1px solid red; */
+.imgDiv img {
+  height: 64%;
+  width: 25%;
+  margin: 0% 2%;
 }
 
-.navList ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 5%;
+.navList {
+  width: 85%;
+  height: 100%;
+  /* border: 1px solid red; */
 }
 
-.navList ul li{
-    border: 1px solid grey;
+.navList ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0%;
+  height: 100%;
+  width: 100%;
+}
+
+.navList ul li {
+  position: relative;
+}
+
+.navList ul li div {
+  padding: 8px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0% 10px;
+  font-family: "Khand", sans-serif;
+  font-size: 1.6rem;
+  color: aliceblue;
+  border-radius: 20px;
+  /* border: 1px solid; */
+}
+
+.navList ul li div:hover {
+  background-color: lightblue;
+  cursor: pointer;
 }
