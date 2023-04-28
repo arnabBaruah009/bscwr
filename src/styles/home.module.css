@@ -1,0 +1,189 @@
+.home {
+  font-size: 16px;
+}
+
+.chairPersonInfo {
+  position: relative;
+  /* height: 80vh; */
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.chairPersonInfo .imgContainer {
+  width: 30%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chairPersonInfo .imgContainer img {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.chairPersonInfo .imgContainer p {
+  font-size: 1.6em;
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+}
+
+.details {
+  width: 65%;
+  margin-left: 10px;
+  /* border: 1px solid black; */
+}
+
+.details h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-size: 3em;
+  letter-spacing: 0.03em;
+  color: #01a1df;
+}
+
+.details p {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.3em;
+  line-height: 2em;
+  letter-spacing: 0.03em;
+}
+
+.publications {
+  padding: 0.3rem 2rem;
+  background-color: #01a1df;
+  color: aliceblue;
+  font-family: "Ysabeau", sans-serif;
+}
+
+.heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.heading span {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.publications h1 {
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.publications h2 {
+  font-size: 1.6em;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.publicationDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.publicationDiv .publicationItem {
+  padding: 0.9rem;
+  border: 1px solid rgb(221, 195, 195);
+  margin: 20px 0px;
+}
+
+.publicationDiv .publicationItem h3 {
+  font-size: 1.6em;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.publicationDiv .publicationItem div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.publicationDiv .publicationItem span {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.chairProf {
+  padding: 0.3rem 2rem;
+  text-align: center;
+}
+
+.chairProf h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-size: 3em;
+  letter-spacing: 0.03em;
+  color: #01a1df;
+}
+
+.chairProf .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.chairProf .container .item {
+  position: relative;
+  height: 160px;
+  width: 300px;
+  margin: 20px;
+  border: 1px solid rgb(132, 241, 232);
+  text-align: left;
+  border-radius: 20px;
+  padding: 10px;
+  color: antiquewhite;
+  padding-top: 43px;
+  font-size: 1.1em;
+  font-family: "Fjalla One";
+  transition: all 0.5s;
+}
+
+.chairProf .container .item::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 15px;
+  left: -15px;
+  background-color: #01a1df;
+  z-index: -1;
+  border-radius: 20px;
+}
+
+.chairProf .container .item:hover {
+  translate: 25px -25px;
+}
+
+@media screen and (max-width: 768px) {
+  /* 575px 991px */
+
+  .home {
+    font-size: 10px;
+  }
+
+  .chairPersonInfo {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .details p {
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .home {
+    font-size: 14px;
+  }
+}
