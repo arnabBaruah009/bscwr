@@ -1,0 +1,122 @@
+.research {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.research h1 {
+  color: #01a1df;
+}
+
+.researchListContainer {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.researchList {
+  list-style: none;
+  padding: 0;
+}
+
+.researchList li {
+  display: flex;
+}
+
+.listItem {
+  width: fit-content;
+}
+
+.listItem > p {
+  text-align: right;
+  font-size: 1.2em;
+}
+
+.headerBox {
+  height: 60px;
+  width: 100%;
+  background-color: #01a1df;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px 0px 0px 50px;
+}
+
+.researchList > li:nth-child(even) {
+  justify-content: flex-end;
+  margin: 20px 0px;
+}
+
+.researchList > li:nth-child(even) .headerBox {
+  flex-direction: row-reverse;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.researchList > li:nth-child(even) .listItem > p {
+  text-align: left;
+}
+
+.circle {
+  height: 60px;
+  width: 60px;
+  border: 1px solid rgb(47, 252, 255);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progressDiv {
+  padding: 30px;
+  background-color: #01a1df;
+  color: rgb(241, 234, 234);
+}
+
+.progressDiv h1 {
+  text-align: left;
+  font-weight: 300;
+  margin: 0px;
+  font-size: 2.2em;
+  color: white;
+}
+
+.content {
+  height: fit-content;
+  position: relative;
+  margin: 40px auto;
+  width: 85%;
+  border: 1px solid rgb(240, 226, 226);
+  padding: 4%;
+}
+
+.content::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgb(240, 226, 226);
+  top: 2%;
+  left: -1%;
+}
+
+.content h2 {
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.1em;
+}
+
+.content h3 {
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.content ul {
+  padding: 0;
+  font-size: 1.19em;
+}
+
+.content ul li {
+  margin: 20px 0px;
+}
