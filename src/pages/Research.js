@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -12,6 +13,21 @@ import styles from "../styles/research.module.css";
 import bckStyles from "../styles/background.module.css";
 
 const Research = () => {
+  useEffect(() => {
+    // Create a link element and set its attributes
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "./researchSwiperStyles.css";
+
+    // Append the link element to the head of the document
+    document.head.appendChild(link);
+
+    // Return a cleanup function to remove the link element when the component unmounts
+    return () => {
+      document.head.removeChild(link);
+    };
+  }, []);
+
   return (
     <div className={`topContainer ${styles.research}`}>
       <div className={`${bckStyles.bckGrnd} ${bckStyles.bckGrnd1}`}></div>
