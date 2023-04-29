@@ -5,3 +5,43 @@
 .gallery h1 {
   color: #01a1df;
 }
+
+.galleryContainer{
+  margin-bottom: 40px;
+}
+
+.eventContainer{
+  margin: auto;
+  height: 100vh;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.eventItem{
+  height: 40%;
+  width: 100%;
+  margin: 20px 0px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.eventItem:nth-child(even){
+  flex-direction: row-reverse;
+}
+
+.imgDiv{
+  margin: 0px 20px;
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+}
+
+.imgDiv img{
+  height: 100%;
+  width: 100%;
+}
+
+.eventItem span{
+  font-size: 1.6em;
+}
