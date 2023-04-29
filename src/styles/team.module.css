@@ -184,12 +184,15 @@
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 991px) {
+  .bckGrnd1 {
+    height: 350px;
+    width: 350px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   /* 575px 991px */
-
-  .home {
-    font-size: 10px;
-  }
 
   .chairPersonInfo {
     flex-direction: column;
@@ -198,19 +201,5 @@
   .details p {
     text-align: justify;
   }
-
-  .bckGrnd {
-    display: none;
-  }
 }
 
-@media screen and (max-width: 991px) {
-  .home {
-    font-size: 14px;
-  }
-
-  .bckGrnd1 {
-    height: 350px;
-    width: 350px;
-  }
-}

@@ -15,5 +15,11 @@
   height: 400px;
   width: 400px;
   bottom: 4%;
-  right: -18%;
+  right: -48%;
+}
+
+@media screen and (max-width: 768px) {
+  .bckGrnd {
+    display: none;
+  }
 }
