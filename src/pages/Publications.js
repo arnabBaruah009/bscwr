@@ -5,7 +5,7 @@ const Publications = () => {
   return (
     <div className={`topContainer ${styles.publications}`}>
         <div className={`${bckStyles.bckGrnd} ${bckStyles.bckGrnd1}`}></div>
-        <div className={`${bckStyles.bckGrnd} ${bckStyles.bckGrnd2}`}></div>
+        {/* <div className={`${bckStyles.bckGrnd} ${bckStyles.bckGrnd2}`}></div> */}
       <h1>Bringing you the latest news and insights on various aspects</h1>
       <div className={styles.publicationsContainer}>
         <div className={styles.publicationDiv}>
