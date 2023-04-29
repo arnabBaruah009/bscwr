@@ -82,22 +82,10 @@
 }
 
 .content {
-  height: fit-content;
-  position: relative;
-  margin: 40px auto;
-  width: 85%;
   border: 1px solid rgb(240, 226, 226);
-  padding: 4%;
-}
-
-.content::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border: 1px solid rgb(240, 226, 226);
-  top: 2%;
-  left: -1%;
+  margin: auto;
+  width: 80%;
+  padding: 0% 4%;
 }
 
 .content h2 {
