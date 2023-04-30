@@ -5,20 +5,33 @@
 
 .hero {
   display: flex;
-  /* border: 1px solid blue; */
+  clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 4%);
+  background: #1ca1df;
+  color: white;
+  height: 330px;
+  margin-top: -15px;
 }
 
 .leftDiv {
   width: 27%;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid red; */
+  background-color: #0797D0;
 }
 
 .leftDiv > div {
+  position: relative;
   padding: 0% 11%;
   text-align: left;
-  border-bottom: 1px dashed #6477b9;
+}
+
+.leftDiv > div:first-child::before{
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 75%;
+  height: 0.5px;
+  bottom: 0;
 }
 
 .leftDiv h5 {
@@ -40,7 +53,6 @@
   font-weight: 400;
   font-size: 2.6em;
   letter-spacing: 0.03em;
-  color: #01a1df;
 }
 
 .rightDiv p {
@@ -106,6 +118,7 @@
   padding: 2em 0;
   background-color: #01a1df;
   color: azure;
+  flex-direction: row-reverse;
 }
 
 .otherObjDiv h1 {
@@ -113,16 +126,231 @@
   padding-right: 1.7em;
 }
 
-.objListDiv {
-  border-right: 1px dashed #1d84b5;
-  width: 100%;
+.otherObjListDiv{
+  border-right: 1px dashed #014fdf;
 }
 
 .otherObjListDiv ol {
-  padding-right: 1em;
   padding-left: 5em;
 }
 
 .otherObjListDiv ol li::before {
   background: whitesmoke;
+}
+
+.chairPersonInfo {
+  position: relative;
+  /* height: 80vh; */
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.chairPersonInfo .imgContainer {
+  width: 30%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chairPersonInfo .imgContainer img {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.chairPersonInfo .imgContainer p {
+  font-size: 1.6em;
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+}
+
+.details {
+  width: 65%;
+  margin-left: 10px;
+  /* border: 1px solid black; */
+}
+
+.details h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-size: 3em;
+  letter-spacing: 0.03em;
+  color: #01a1df;
+}
+
+.details p {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.3em;
+  line-height: 2em;
+  letter-spacing: 0.03em;
+}
+
+.publications {
+  padding: 0.3rem 2rem;
+  background-color: #01a1df;
+  color: aliceblue;
+  font-family: "Ysabeau", sans-serif;
+}
+
+.heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.heading span {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  color: aliceblue;
+}
+
+.publications h1 {
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.publications h2 {
+  font-size: 1.6em;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.publicationDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.publicationDiv .publicationItem {
+  padding: 0.9rem;
+  border: 1px solid rgb(221, 195, 195);
+  margin: 20px 0px;
+}
+
+.publicationDiv .publicationItem h3 {
+  font-size: 1.6em;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.publicationDiv .publicationItem div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.publicationDiv .publicationItem span {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.chairProf {
+  padding: 0.3rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.chairProf h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-size: 3em;
+  letter-spacing: 0.03em;
+  color: #01a1df;
+}
+
+.chairProf .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.chairProf .container .item {
+  position: relative;
+  height: 160px;
+  width: 300px;
+  margin: 20px;
+  border: 1px solid rgb(132, 241, 232);
+  text-align: left;
+  border-radius: 20px;
+  padding: 10px;
+  color: antiquewhite;
+  padding-top: 43px;
+  font-size: 17px;
+  font-family: "Fjalla One";
+  transition: all 0.5s;
+}
+
+.chairProf .container .item::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 15px;
+  left: -15px;
+  background-color: #01a1df;
+  z-index: -1;
+  border-radius: 20px;
+}
+
+.chairProf .container .item:hover {
+  translate: 25px -25px;
+}
+
+.bckGrnd {
+  position: absolute;
+  background-color: #7fffd44f;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.bckGrnd1 {
+  height: 500px;
+  width: 500px;
+  left: -14%;
+}
+
+.bckGrnd2 {
+  height: 350px;
+  width: 350px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 991px) {
+  .bckGrnd1 {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* 575px 991px */
+
+  .chairPersonInfo {
+    flex-direction: column;
+  }
+
+  .details p {
+    text-align: justify;
+  }
+
+  .objDiv{
+    flex-direction: column;
+  }
+  .objDiv h1{
+    font-size: 2em;
+    padding: 0 0.5em;
+  }
+
+  .otherObjListDiv{
+    border-right: 0px;
+  }
 }
