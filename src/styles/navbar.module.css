@@ -1,28 +1,18 @@
 .nav {
-  height: 19vh;
+  height: 9rem;
   background-color: #01a1df;
-  display: flex;
+  display: grid;
+  grid-template-columns: 2rem 1fr 3fr;
   clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);
 }
 
 .imgDiv {
-  width: 40%;
-  height: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 2/3;
   align-items: center;
-  /* border: 1px solid black; */
-}
-
-.imgDiv img {
-  height: 64%;
-  width: 25%;
-  margin: 0% 2%;
-}
-
-.navList {
-  width: 90%;
-  height: 100%;
-  /* border: 1px solid red; */
+  justify-content: space-evenly;
+  padding-right: 25%;
 }
 
 .navList ul {
@@ -32,28 +22,92 @@
   justify-content: space-around;
   align-items: center;
   padding: 0%;
+  padding-left: 3.6rem;
   height: 100%;
-  width: 100%;
-}
-
-.navList ul li {
-  position: relative;
 }
 
 .navList ul li div {
-  padding: 8px 30px;
+  padding: 0.5rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0% 10px;
   font-family: "Khand", sans-serif;
   font-size: 1.6rem;
   color: aliceblue;
   border-radius: 20px;
-  /* border: 1px solid; */
 }
 
 .navList ul li div:hover {
   background-color: lightblue;
   cursor: pointer;
+}
+
+.humBurger {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .navList ul li div {
+    font-size: 1.3rem;
+    padding: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    grid-template-columns: repeat(3, 1fr);
+    clip-path: none;
+  }
+
+  .imgDiv {
+    grid-column: 1/2;
+    padding-left: 2.5rem;
+  }
+
+  .navList {
+    display: none;
+  }
+
+  .mobileMenu {
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    z-index: 99;
+    background-color: rgb(35 102 161);
+    width: 14rem;
+    border-radius: 10px;
+  }
+
+  .mobileMenu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+    padding: 0;
+    position: relative;
+  }
+
+  .mobileMenu ul li {
+    padding: 1rem;
+  }
+
+  .mobileMenu ul li div {
+    font-size: 1.1rem;
+    padding: 0.05rem;
+    color: white;
+    width: 100%;
+  }
+
+  .hamBurger {
+    display: grid;
+    grid-column: 3/4;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 2rem;
+    padding-right: 1rem;
+    cursor: pointer;
+    color: rgb(131, 226, 226);
+  }
 }
