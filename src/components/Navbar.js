@@ -2,52 +2,48 @@ import styles from "../styles/navbar.module.css";
 import Logo1 from "../images/Logo1.svg";
 import Logo2 from "../images/Logo2.svg";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [viewMenu, setViewMenu] = useState(false);
+
   return (
     <div className={styles.nav}>
       <div className={styles.imgDiv}>
         <img src={Logo1} alt="Logo1"></img>
         <img src={Logo2} alt="Logo2"></img>
       </div>
-      <div className={styles.navList}>
+      <div className={viewMenu ? styles.mobileMenu : styles.navList}>
         <ul>
-          <li>
+          <li onClick={() => setViewMenu(false)}>
             <Link to={"/"}>
               <div>
                 <b>Home</b>
               </div>
             </Link>
           </li>
-          <li>
-            <Link to={"/team"}>
+          <li onClick={() => setViewMenu(false)}>
+            <Link to={"/events"}>
               <div>
-                <b>Team</b>
+                <b>Events</b>
               </div>
             </Link>
           </li>
-          <li>
-            <Link to={"/"}>
-              <div>
-                <b>Finance</b>
-              </div>
-            </Link>
-          </li>
-          <li>
+          <li onClick={() => setViewMenu(false)}>
             <Link to={"/research"}>
               <div>
                 <b>Research Projects</b>
               </div>
             </Link>
           </li>
-          <li>
+          <li onClick={() => setViewMenu(false)}>
             <Link to={"/gallery"}>
               <div>
                 <b>Gallery</b>
               </div>
             </Link>
           </li>
-          <li>
+          <li onClick={() => setViewMenu(false)}>
             <Link to={"/publications"}>
               <div>
                 <b>Publications</b>
@@ -55,6 +51,12 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
+      </div>
+
+      <div className={styles.hamBurger}>
+        <p onClick={() => setViewMenu(!viewMenu)}>
+          <i class="fa-solid fa-bars"></i>
+        </p>
       </div>
     </div>
   );
