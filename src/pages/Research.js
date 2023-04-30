@@ -31,6 +31,7 @@ const Research = () => {
   return (
     <div className={`topContainer ${styles.research}`}>
       <div className={`${bckStyles.bckGrnd} ${bckStyles.bckGrnd1}`}></div>
+      <div className={`${bckStyles.bckGrnd} ${bckStyles.bckGrnd2}`}></div>
       <h1>Pioneering research in various aspects</h1>
       <div className={styles.researchListContainer}>
         <ul className={styles.researchList}>

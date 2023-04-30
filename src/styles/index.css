@@ -33,30 +33,6 @@ a {
   font-size: 2.2em;
 }
 
-.swiper {
-  width: 100%;
-}
-
-.swiper-button-prev {
-  left: 0px !important;
-  color: white !important;
-}
-
-.swiper-button-next {
-  right: 0px !important;
-  color: white !important;
-}
-
-.swiper-pagination-bullet {
-  background-color: black !important;
-  opacity: 0.4 !important;
-}
-
-.swiper-pagination-bullet-active {
-  opacity: 1 !important;
-  background: white !important;
-}
-
 @media screen and (max-width: 991px) {
   .topContainer {
     font-size: 14px;
