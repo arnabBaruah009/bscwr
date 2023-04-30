@@ -11,6 +11,20 @@
   height: 300px;
 }
 
+@media screen and (max-width: 991px) {
+  .swiper-slide{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-slide{
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .swiper-slide img {
   display: block;
   width: 100%;
