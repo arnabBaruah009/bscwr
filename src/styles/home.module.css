@@ -1,0 +1,128 @@
+.home {
+  margin-top: 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.hero {
+  display: flex;
+  /* border: 1px solid blue; */
+}
+
+.leftDiv {
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+
+.leftDiv > div {
+  padding: 0% 11%;
+  text-align: left;
+  border-bottom: 1px dashed #6477b9;
+}
+
+.leftDiv h5 {
+  margin: 1rem 0;
+  font-size: 1.2em;
+}
+
+.leftDiv p {
+  font-size: 1.2em;
+}
+
+.rightDiv {
+  width: 80%;
+  padding-left: 5em;
+}
+
+.rightDiv h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-size: 2.6em;
+  letter-spacing: 0.03em;
+  color: #01a1df;
+}
+
+.rightDiv p {
+  font-size: 1.3em;
+  line-height: 2em;
+  letter-spacing: 0.03em;
+}
+
+.objDiv {
+  margin: 3em 0px;
+  display: flex;
+  align-items: center;
+}
+
+.objDiv h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-size: 3em;
+  letter-spacing: 0.03em;
+  color: #01a1df;
+  padding: 0px 1.7em;
+}
+
+.objListDiv {
+  width: 70%;
+}
+
+.objListDiv ol {
+  list-style: none;
+  padding-right: 1.5em;
+}
+
+.objListDiv ol li {
+  position: relative;
+  margin: 1.5em 0px;
+  font-size: 1.25em;
+  line-height: 2em;
+}
+
+.objListDiv ol li::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background: #1ca1df;
+  border-radius: 50%;
+  left: -55px;
+  top: 16px;
+}
+
+.objListDiv ol li::after {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border: 1px solid rgb(42 255 243);
+  border-radius: 50%;
+  left: -52px;
+  top: 12px;
+}
+
+.otherObjDiv {
+  padding: 2em 0;
+  background-color: #01a1df;
+  color: azure;
+}
+
+.otherObjDiv h1 {
+  color: azure;
+  padding-right: 1.7em;
+}
+
+.objListDiv {
+  border-right: 1px dashed #1d84b5;
+  width: 100%;
+}
+
+.otherObjListDiv ol {
+  padding-right: 1em;
+  padding-left: 5em;
+}
+
+.otherObjListDiv ol li::before {
+  background: whitesmoke;
+}
