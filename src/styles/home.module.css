@@ -72,7 +72,7 @@
   font-weight: 400;
   font-size: 3em;
   letter-spacing: 0.03em;
-  color: #01a1df;
+  color: #1118BD;
   padding: 0px 1.7em;
 }
 
@@ -97,7 +97,7 @@
   position: absolute;
   height: 30px;
   width: 30px;
-  background: #1ca1df;
+  background: #1118BD;
   border-radius: 50%;
   left: -55px;
   top: 16px;
@@ -115,23 +115,12 @@
 }
 
 .otherObjDiv {
-  padding: 2em 0;
   background-color: #01a1df;
   color: azure;
-  flex-direction: row-reverse;
 }
 
 .otherObjDiv h1 {
   color: azure;
-  padding-right: 1.7em;
-}
-
-.otherObjListDiv{
-  border-right: 1px dashed #014fdf;
-}
-
-.otherObjListDiv ol {
-  padding-left: 5em;
 }
 
 .otherObjListDiv ol li::before {
@@ -301,6 +290,19 @@
 
 .chairProf .container .item:hover {
   translate: 25px -25px;
+}
+
+.col1{
+  background-color: #CFB427;
+}
+.col2{
+  background-color: #8D2ED8;
+}
+.col3{
+  background-color: #BE2440;
+}
+.col4{
+  background-color: #33D818;
 }
 
 .bckGrnd {

@@ -155,21 +155,21 @@ const Home = () => {
         <div className={`${styles.bckGrnd} ${styles.bckGrnd2}`}></div>
         <h1>Chair Professors</h1>
         <div className={styles.container}>
-          <div className={styles.item}>
+          <div className={`${styles.item} ${styles.col1}`} >
             <p>July 26, 2013 - July 2012</p>
             <p>Dr. NK Goel</p>
             <p>Professor, Dept. of Hydrology, IIT Roorkee.</p>
           </div>
-          <div className={styles.item}>
+          <div className={`${styles.item} ${styles.col2}`}>
             <p>2017-2019</p>
             <p>The position remained unoccupied</p>
           </div>
-          <div className={styles.item}>
+          <div className={`${styles.item} ${styles.col3}`}>
             <p>July 30, 2019 - July 20222</p>
             <p>Dr. S. K. Mishra</p>
             <p>Current chair of BSCWR</p>
           </div>
-          <div className={styles.item}>
+          <div className={`${styles.item} ${styles.col4}`}>
             <p>Jan 18, 2023</p>
             <p>To till date</p>
           </div>
