@@ -28,6 +28,17 @@
   padding: 0.5em;
   margin: 0;
   width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.data svg {
+  height: 25px;
+  margin-right: 2em;
+}
+
+.data svg path {
+  color: aquamarine;
 }
 
 .form label {

@@ -9,9 +9,8 @@ const Navbar = () => {
 
   return (
     <div className={styles.nav}>
-      <div className={styles.imgDiv}>
+      <div className={`${styles.imgDiv} ${styles.logo1}`}>
         <img src={Logo1} alt="Logo1"></img>
-        <img src={Logo2} alt="Logo2"></img>
       </div>
       <div className={viewMenu ? styles.mobileMenu : styles.navList}>
         <ul>
@@ -58,6 +57,9 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
+      </div>
+      <div className={`${styles.imgDiv} ${styles.logo2}`}>
+        <img src={Logo2} alt="Logo2"></img>
       </div>
 
       <div className={styles.hamBurger}>
