@@ -50,6 +50,13 @@ const Navbar = () => {
               </div>
             </Link>
           </li>
+          <li onClick={() => setViewMenu(false)}>
+            <Link to={"/contact"}>
+              <div>
+                <b>Contact Us</b>
+              </div>
+            </Link>
+          </li>
         </ul>
       </div>
 

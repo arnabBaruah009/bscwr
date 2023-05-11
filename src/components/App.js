@@ -1,7 +1,14 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { Navbar } from "./";
-import { Home, Events, Research, Gallery, Publications } from "../pages";
+import {
+  Home,
+  Events,
+  Research,
+  Gallery,
+  Publications,
+  Contact,
+} from "../pages";
 
 function App() {
   return (
@@ -14,6 +21,7 @@ function App() {
           <Route path="/research" element={<Research />}></Route>
           <Route path="/gallery" element={<Gallery />}></Route>
           <Route path="/publications" element={<Publications />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
         </Routes>
       </div>
     </BrowserRouter>

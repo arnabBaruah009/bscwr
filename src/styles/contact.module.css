@@ -1,0 +1,13 @@
+.contact {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.contact h1 {
+  color: #01a1df;
+}
+
+.contactContainer{
+    width: 60%;
+    height: 50vh;
+    margin: 50px auto;
+}
