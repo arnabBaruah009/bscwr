@@ -6,6 +6,11 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [viewMenu, setViewMenu] = useState(false);
+  const [activeTab, setActiveTab] = useState("");
+
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
 
   return (
     <div className={styles.nav}>
@@ -15,43 +20,48 @@ const Navbar = () => {
       <div className={viewMenu ? styles.mobileMenu : styles.navList}>
         <ul>
           <li onClick={() => setViewMenu(false)}>
-            <Link to={"/"}>
-              <div>
+            <Link to={"/"} onClick={() => handleTabClick("home")}>
+              <div className={activeTab === "home" ? styles.active : ""}>
                 <b>Home</b>
               </div>
             </Link>
           </li>
           <li onClick={() => setViewMenu(false)}>
-            <Link to={"/events"}>
-              <div>
+            <Link to={"/events"} onClick={() => handleTabClick("events")}>
+              <div className={activeTab === "events" ? styles.active : ""}>
                 <b>Events</b>
               </div>
             </Link>
           </li>
           <li onClick={() => setViewMenu(false)}>
-            <Link to={"/research"}>
-              <div>
+            <Link to={"/research"} onClick={() => handleTabClick("research")}>
+              <div className={activeTab === "research" ? styles.active : ""}>
                 <b>Research Projects</b>
               </div>
             </Link>
           </li>
           <li onClick={() => setViewMenu(false)}>
-            <Link to={"/gallery"}>
-              <div>
+            <Link to={"/gallery"} onClick={() => handleTabClick("gallery")}>
+              <div className={activeTab === "gallery" ? styles.active : ""}>
                 <b>Gallery</b>
               </div>
             </Link>
           </li>
           <li onClick={() => setViewMenu(false)}>
-            <Link to={"/publications"}>
-              <div>
+            <Link
+              to={"/publications"}
+              onClick={() => handleTabClick("publications")}
+            >
+              <div
+                className={activeTab === "publications" ? styles.active : ""}
+              >
                 <b>Publications</b>
               </div>
             </Link>
           </li>
           <li onClick={() => setViewMenu(false)}>
-            <Link to={"/contact"}>
-              <div>
+            <Link to={"/contact"} onClick={() => handleTabClick("contact")}>
+              <div className={activeTab === "contact" ? styles.active : ""}>
                 <b>Contact Us</b>
               </div>
             </Link>

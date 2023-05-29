@@ -40,6 +40,10 @@
   cursor: pointer;
 }
 
+.navList .active {
+  background-color: lightblue;
+}
+
 .hamBurger {
   display: none;
 }
