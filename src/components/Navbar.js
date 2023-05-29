@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [viewMenu, setViewMenu] = useState(false);
-  const [activeTab, setActiveTab] = useState("");
+  const [activeTab, setActiveTab] = useState("home");
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
