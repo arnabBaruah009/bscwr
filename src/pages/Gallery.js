@@ -5,9 +5,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper";
+import { EffectCoverflow, Pagination, Navigation } from "swiper";
 
 import styles from "../styles/gallery.module.css";
 import bckStyles from "../styles/background.module.css";
@@ -49,10 +50,11 @@ const Gallery = () => {
             modifier: 1,
             // slideShadows: true,
           }}
+          navigation={true}
           pagination={{
             clickable: true,
           }}
-          modules={[EffectCoverflow, Pagination]}
+          modules={[EffectCoverflow, Pagination, Navigation]}
           className="mySwiper"
         >
           {imgArray.map((img, index) => {
