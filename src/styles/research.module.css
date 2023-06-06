@@ -38,21 +38,13 @@
   color: white;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   border-radius: 50px 0px 0px 50px;
 }
 
 .headerBox p {
+  margin-left: 0.7em;
   width: fit-content;
-}
-
-.researchList > li:nth-child(odd) .headerBox p {
-  margin-left: 1em;
-}
-
-.researchList > li:nth-child(even) .listItem > p {
-  text-align: left;
 }
 
 .circle {
